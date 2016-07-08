@@ -1,9 +1,5 @@
-<h1>Users page</h1>
+<h1>Sign In Here</h1>
+<%= link_to "Sign In", sessions_sign_in_path %>
 
-<% @users.each do |user|%>
-	<%= user.fname %>
-	<%= user.lname %>
-	<%= user.bday %>
-	<%= user.email %>
-<% end %>	
-
+<h1>Sign Up Here</h1>
+<%= link_to "Sign Up", users_sign_up_path %>
