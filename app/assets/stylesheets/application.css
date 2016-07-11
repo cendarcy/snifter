@@ -13,3 +13,50 @@
  *= require_tree .
  *= require_self
  */
+
+body{
+  top: 0px;
+  font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+ul {
+  float: right;
+  margin-top: -10px;
+  font-size: 18px;
+  list-style: none;
+  display: inline;
+  font-size: 18px;
+}
+
+li {
+  display: inline;
+  padding: 5px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+
+}
+
+a:hover{
+  color: red;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+input[type=text], [type=password] {
+  border: 0;
+    outline: 0;
+    background: transparent;
+  border-bottom: 2px solid red;
+  width: 200px;
+  height: 30px;
+}

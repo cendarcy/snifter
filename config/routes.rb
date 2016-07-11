@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  root 'users#index'
-
   # get 'sessions/sign_in' => 'sessions#sign_in'
   # post 'sessions/sign_in' => 'sessions#create'
 
@@ -11,7 +9,6 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  
   
 
   # get "/users" => "users#index"
@@ -29,18 +26,19 @@ Rails.application.routes.draw do
   get "/sessions/sign_in" => "sessions#sign_in"
   post "/sessions/sign_in" => "sessions#create"
 
-  #Show
-  get "/users/:id", to: "users#show", as: "user"
-
   #Logout
   delete "/users/:id" => "sessions#destroy"
+  
 
-  #Posts
-  get 'posts/index'
+  resources :users 
 
-  resources :users
   resources :sessions 
-
+  
+  resources :posts do
+    resources :comments
+  end
+ 
+  root 'users#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
