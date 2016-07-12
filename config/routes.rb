@@ -28,7 +28,6 @@ Rails.application.routes.draw do
 
   #Logout
   delete "/users/:id" => "sessions#destroy"
-  
 
   resources :users 
 

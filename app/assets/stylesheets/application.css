@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
 html{
   top: 0px;
   left: 0px;
@@ -58,8 +59,10 @@ a:hover{
   color: red;
 }
 
-h1 {
+#logo {
   font-family: 'Oswald', sans-serif;
+  color: black;
+  background-color: none;
 }
 
 h2 {

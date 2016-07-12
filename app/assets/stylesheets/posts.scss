@@ -1,26 +1,148 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.hdr {
+  color: white;
+  background-color: black;
+}
+
+div.feed {
+    background-color: rgba(224, 88, 88, 1);
+    color: black;
+    margin-left: 20px;
+    width: 97%;
+    height: 80vh;
+
+    h1 {
+    font-size: 40px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    margin-left: 5px;   
+  }
+
+  #space-me {
+    margin-top: 40px
+  }
+
+  h2 {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+
+  h3 {
+    color: black;
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  h4 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  p {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+ } 
+
+
+/*====SHOW PAGE====*/
 
 h1 {
   font-size: 40px;
   margin-bottom: 60px;
   margin-top: 10px;
-  margin-left: 5px;
-  color: white;
-}
-h2 {
-  color: black;
-  font-size: 40px;
-  margin-bottom : 20px;
-  margin-left: 15px;
-}
-h3 {
-  color: black;
+  margin-left: 5px;  
 }
 
-.feed {
-  background-color: white;
-  color: black;
+
+div.show-page {
+ background-color: rgba(224, 88, 88, 1);
+ border:2px solid black;
   
+  #header{
+
+  background-color: black;
+
+  }
+
+  h2 {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+
+  h3 {
+    color: black;
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  h4 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  p {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  
+}
+
+div.top-edit-page {
+  h1 {
+  font-size: 40px;
+  margin-bottom: 60px;
+  margin-top: 10px;
+  margin-left: 5px;
+  color: white;   
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  }
+
+div.edit-page {
+  background-color: rgba(224, 88, 88, 1);
+  border: 2px solid black;
+  margin-left: 20px;
+  padding-left: 20px;
+  width: 97%;
+  height: 80vh;
+
+
+
+  h2 {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+
+}
+}
+//====NEW PAGE====
+
+
+div.new-page {
+  background-color: rgba(224, 88, 88, 1);
+  border: 2px solid black;
+  margin-left: 20px;
+  padding-left: 20px;
+  width: 97%;
+  height: 80vh;
+
+   h2 {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+
 }
