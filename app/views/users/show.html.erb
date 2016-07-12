@@ -1,11 +1,14 @@
-<h1>Welcome!</h1>
-
-<div>
-  <h2>First name:</h2><%= @user.fname %>
-  <h2>Last name:</h2><%= @user.lname %>
-  <h2>Username:</h2><%= @user.username %>
-  <h2>First name:</h2><%= @user.email %>  
+<div id="header">   
+  <img src="/assets/whisky-bottles.jpg"/>
+<h1 id="welcome">Welcome!</h1>
 </div>
+
+<div id="profile">
+  <h2 class="profile-deets">First name:</h2><p><%= @user.fname %></p>
+  <h2 class="profile-deets">Last name:</h2><p><%= @user.lname %></p>
+  <h2 class="profile-deets">Username:</h2><p><%= @user.username %></p>
+  <h2 class="profile-deets">First name:</h2><p><%= @user.email %></p>  
+
 
 
 <div>
@@ -15,12 +18,14 @@
 		<%= post.title %><br />
     <h2>Content</h2>
 		<%= post.text %><br/>
-      
+</div>
 		<%= link_to 'Back', posts_path %>
 | <%= link_to 'Edit', edit_post_path %> | <%= link_to 'Destroy', post_path(post), method: :delete, data: {confirm: 'Are you sure?'} %>
 		<% end %>
 	<% end %>
+
 </div>
 
-
+<div>
 <%= link_to "Log Out", session_path(@user.id), method: :delete %>
+</div>

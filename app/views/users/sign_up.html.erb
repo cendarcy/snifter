@@ -1,15 +1,19 @@
-<h1>Sign Up</h1>
+<div id="whiskey-back">
+	<div class="white">
+		<h1>Sign Up</h1>
 
-<%= form_for @user do |form| %>
-	<h2>First name:</h2>
-	<%= form.text_field :fname %><br>
-	<h2>Last name:</h2>
-	<%= form.text_field :lname %><br>
-	<h2>Username:</h2>
-	<%= form.text_field :username %><br>
-	<h2>Password:</h2>
-	<%= form.text_field :password %><br>
-	<h2>Email:</h2>
-	<%= form.text_field :email %><br>
-	<%= form.submit %>
-<% end %>
+		<%= form_for @user do |form| %>
+			<h2>First name:</h2>
+			<%= form.text_field :fname %><br>
+			<h2>Last name:</h2>
+			<%= form.text_field :lname %><br>
+			<h2>Username:</h2>
+			<%= form.text_field :username %><br>
+			<h2>Password:</h2>
+			<%= form.text_field :password %><br>
+			<h2>Email:</h2>
+			<%= form.text_field :email %><br>
+			<%= form.submit "Sign Up" %>
+		<% end %>
+	</div>
+</div>
