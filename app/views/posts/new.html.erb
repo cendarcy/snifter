@@ -1,5 +1,5 @@
 <div>
-<h1>Make a new post</h1>
+<h1 id="new-header">Make a new post</h1>
 </div>
 <div class="new-page">
 <%= form_for :posts, url: posts_path do |form|%>
@@ -14,14 +14,14 @@
     </ul>
   </div>
   <% end %>
-	<p>
+	<div>
 		<%= form.label :title %><br>
 		<%= form.text_field :title %>
-	</p>
-	<p>
+	</div>
+	<div>
 		<%= form.label :text %><br>
 		<%= form.text_area :text %>
-	</p>
+	</div>
     <%= form.hidden_field :user_id, value: session[:user_id] %>
 	<p>
 		<%= form.submit "Post" %>

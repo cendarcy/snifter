@@ -63,6 +63,7 @@ form {
 #whiskey-back{
   height: 100vh;
   background-image: url("/assets/whisky3.jpg");
+  margin-top: -20px;
 }
 
 .white {
@@ -102,27 +103,31 @@ input[type=submit]{
   width: 100%;
   height: 20%;
   color: black;
+  margin-top: -20px;
 }
 
 img {
   padding-top: 20px;
+  width: 100vw;
 }
 
 #welcome {
   margin-top: -255px;
   color: white;
   margin-bottom: 220px;
+  background-color: black;
+  height: 20vh;
 }
 
 #profile {
-  background-color: rgba(224, 88, 88, 1);
+  background-color: #470b0f;
   padding-left: 30px;
-  width: 97%;
+  width: 95vw;
   border: 20px solid black;
 }
 
 .profile-deets{
-  font-size: 30px;
+  font-size: 20px;
   color: black;
   margin-left: -10px;
   padding-top: 20px;

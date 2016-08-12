@@ -26,8 +26,6 @@ class UsersController < ApplicationController
 		
 		redirect_to users_path
 
-		# flash[:alert] = "Details have been changed"
-
 	end		
 
 	def show
